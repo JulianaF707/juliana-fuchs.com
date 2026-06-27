@@ -1,0 +1,14 @@
+{
+  "name": "juliana-website",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juliana fuchs",
+  "license": "ISC",
+  "dependencies": {
+    "vanilla-framework": "^4.55.1"
+  }
+}
