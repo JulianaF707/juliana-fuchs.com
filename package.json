@@ -1,7 +1,7 @@
 {
   "name": "juliana-website",
   "version": "1.0.0",
-  "description": "my website",
+  "description": "My website",
   "main": "index.html",
   "scripts": {
     "build": "sass --load-path=node_modules styles/main.scss:public/main.css",
@@ -9,7 +9,7 @@
     "dev": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
   },
-  "author": "Juliana fuchs",
+  "author": "Juliana Fuchs",
   "license": "ISC",
   "engines": {
     "node": ">=22.0.0"
