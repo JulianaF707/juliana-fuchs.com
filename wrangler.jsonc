@@ -3,7 +3,6 @@
   "name": "juliana-fuchs-com",
   "compatibility_date": "2026-06-27",
   "assets": {
-    "directory": "./public",
-    "binding": "ASSETS"
+    "directory": "./public"
   }
 }
