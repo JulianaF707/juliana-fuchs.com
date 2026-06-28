@@ -4,9 +4,9 @@
   "description": "My website",
   "main": "index.html",
   "scripts": {
-    "build": "sass --load-path=node_modules styles/main.scss:public/main.css",
-    "watch": "sass --watch --load-path=node_modules styles/main.scss:public/main.css",
-    "dev": "npm run build && wrangler dev",
+    "build": "sass --quiet-deps --load-path=node_modules styles/main.scss:public/main.css",
+    "watch:css": "sass --watch --quiet-deps --load-path=node_modules styles/main.scss:public/main.css",
+    "dev": "concurrently -k -n css,server -c magenta,cyan \"npm run watch:css\" \"wrangler dev --live-reload\"",
     "deploy": "npm run build && wrangler deploy"
   },
   "author": "Juliana Fuchs",
@@ -18,6 +18,7 @@
     "vanilla-framework": "^4.55.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "sass": "^1.79.0",
     "wrangler": "^4.0.0"
   }
