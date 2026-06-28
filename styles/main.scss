@@ -4,3 +4,36 @@
 body {
   background-color: #F2E2EF;
 }
+
+.margin-demo {
+  margin: 20px; 
+  
+  background-color: rgb(230, 173, 218);
+  padding: 15px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.round-button {
+  width: 80px;
+  height: 60px;
+  border-radius: 90%;
+  
+  background-color: #c569bd;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.round-button:hover {
+  background-color: #0056b3;
+}
+.round-button:active {
+  transform: scale(0.95);
+}
