@@ -11,6 +11,9 @@
   },
   "author": "Juliana fuchs",
   "license": "ISC",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "vanilla-framework": "^4.55.1"
   },
